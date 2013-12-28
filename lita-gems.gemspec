@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-gems"
-  spec.version       = "0.0.1"
+  spec.version       = "1.0.0"
   spec.authors       = ["marsz"]
   spec.email         = ["marsz330@gmail.com"]
-  spec.description   = %q{TODO: Add a description}
-  spec.summary       = %q{TODO: Add a summary}
-  spec.homepage      = "TODO: Add a homepage"
+  spec.description   = "lita handler for rubygems.org querying"
+  spec.summary       = "lita handler for rubygems.org querying"
+  spec.homepage      = "https://github.com/marsz/lita-gems"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "lita", "~> 2.6"
+  spec.add_runtime_dependency "gems", "~> 0.8.0"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
