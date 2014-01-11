@@ -1,5 +1,7 @@
 # lita-gems
 
+[![Build Status](https://travis-ci.org/marsz/lita-gems.png?branch=master)](https://travis-ci.org/marsz/lita-gems)
+
 Lita (robot) handler for querying RubyGems.org through official API gem (https://github.com/rubygems/gems).
 
 ## Installation
