@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-gems"
-  spec.version       = "1.0.1"
+  spec.version       = "1.0.2"
   spec.authors       = ["marsz"]
   spec.email         = ["marsz330@gmail.com"]
   spec.description   = "lita handler for rubygems.org querying"

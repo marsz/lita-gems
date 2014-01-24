@@ -4,8 +4,8 @@ require 'open-uri'
 module Lita
   module Handlers
     class Gems < Handler
-      route /\Agem[ ]+q[ ]+(.+)/i, :search, :command => true, :help => {
-        "gem q cache model" => "search rubygems with 'cache model'"
+      route /^gem\s+q[ ]+(.+)/i, :search, :help => {
+        "gem q KEYWORDS" => "search rubygems by KEYWORDS"
       }
       def search(response)
         keyword = response.matches[0][0]
@@ -18,9 +18,9 @@ module Lita
         end
       end
 
-      route /\Agem[ ]+([^ ]+)/i, :info, :command => true, :help => {
-        "gem devise" => "get gem 'devise' information"
-      }
+      route(/^gem\s+([^ ]+)/i, :info, :help => {
+        "gem GEM_NAME" => "fetch gem's information"
+      })
       def info(response)
         gem_name = response.args[0]
         return if gem_name == "q"
