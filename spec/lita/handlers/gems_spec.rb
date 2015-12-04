@@ -14,7 +14,7 @@ describe Lita::Handlers::Gems, :lita_handler => true do
     end
 
     it "not found" do
-      send_command("gem q rails girls")
+      send_command("gem q rails boys")
       expect(replies.first).to match("Not found")
     end
 
