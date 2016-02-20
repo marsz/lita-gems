@@ -1,0 +1,18 @@
+en:
+  lita:
+    handlers:
+      gems:
+        documentation: "documentation"
+        gem_not_found: "This rubygem could not be found: %{gem}"
+        homepage: "homepage"
+        not_found: "Not found: %{keyword}"
+        rubygems: "rubygems"
+        source: "source code"
+        version: "version"
+        help:
+          info:
+            command: "gem GEM_NAME"
+            text: "fetch gem's information"
+          search:
+            command: "gem q KEYWORDS"
+            text: "search rubygems by KEYWORDS"
